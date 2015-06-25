@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daftneeks.julius.flashstudy.SolutionFragment"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.daftneeks.julius.flashstudy.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:id="@+id/cardAnswerTextView"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/linearLayout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wrongImageButton"
+                android:src="@drawable/ic_action_failed"
+                android:background="@drawable/image_button_background"
+                android:layout_gravity="center"
+                android:contentDescription="@string/fail_image_button"
+                android:padding="8dp" />
+
+            <com.daftneeks.julius.flashstudy.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/failed_it"
+                android:layout_gravity="center"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/correctImageButton"
+                android:src="@drawable/ic_action_correct"
+                android:background="@drawable/image_button_background"
+                android:layout_gravity="center"
+                android:contentDescription="@string/fail_image_button"
+                android:padding="8dp" />
+
+            <com.daftneeks.julius.flashstudy.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/got_it"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--color name="background">#4B007580</color-->
+    <color name="background">#fff</color>
+    <color name="paneBackground">#339982</color>
+    <color name="myPrimary">#251227</color>
+</resources>

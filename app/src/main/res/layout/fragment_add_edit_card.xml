@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daftneeks.julius.flashstudy.AddEditCard">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <com.daftneeks.julius.flashstudy.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/question"
+            android:layout_alignParentTop="true"
+            android:id="@+id/cardQuestion"
+            android:padding="8dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/questionEditText"
+            android:padding="8dp"
+            android:maxHeight="120dp"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:hint="@string/question_hint"
+            android:layout_below="@+id/cardQuestion"
+            android:inputType="textCapSentences|text"
+            android:textStyle="normal"
+            style="@style/EditText" />
+            <!---->
+
+        <com.daftneeks.julius.flashstudy.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/answer"
+            android:id="@+id/cardAnswerTextView"
+            android:layout_below="@+id/questionEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp" />
+            <!--android:layout_above="@+id/answerEditText"-->
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerEditText"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:hint="@string/answer_hint"
+            android:layout_below="@+id/cardAnswerTextView"
+            android:layout_above="@+id/imageRow"
+            android:inputType="textCapSentences|text|textMultiLine"
+            style="@style/EditText" />
+        <!--android:layout_above="@+id/answerTextView"-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/imageRow"
+            android:layout_centerInParent="true"
+            android:weightSum="3"
+            android:layout_marginBottom="40dp"
+            android:padding="8dp">
+            <!--android:layout_below="@+id/answerEditText"-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selectImageButton"
+                    android:text="@string/select_image"
+                    android:src="@drawable/ic_action_new_picture"
+                    android:background="@drawable/button_background"
+                    style="@android:style/ButtonBar"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/select_image" />
+
+                <com.daftneeks.julius.flashstudy.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/select_image"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </TableRow>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:text="@string/make_card"
+            android:id="@+id/makeCardButton"
+            android:layout_alignParentBottom="true"
+            android:textColor="#251227"
+            android:background="@drawable/button_background" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Flash Study</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_knapsack">KnapSack is Empty…Click \'+\' to add Class</string>
+    <string name="empty_class">Class is Empty…Click \'+\' to add a Card</string>
+    <string name="question">Question:</string>
+    <string name="question_hint">Question:</string>
+    <string name="answer">Answer:</string>
+    <string name="answer_hint">Answer:</string>
+    <string name="make_card">Make Card</string>
+    <string name="select_image">Select Image</string>
+    <string name="menuitem_addclass">Add Class</string>
+    <string name="menuitem_addcard">Add Card</string>
+    <string name="menuitem_editclass">Edit Class</string>
+    <string name="menuitem_deleteclass">Delete Class</string>
+    <string name="class_hint">Title of Class (Required)</string>
+    <string name="save_class_button">Save Class</string>
+    <string name="done_button">Done</string>
+    <string name="error_message_class">Class title must be entered</string>
+    <string name="error_message_question">Question is too short</string>
+    <string name="error_message_answer">Answer is too short</string>
+    <string name="error_message_image">Image has not been selected. Please select an image</string>
+
+    <string name="card_image">Card Image</string>
+    <string name="fail_image_button">Fail Image</string>
+    <string name="pass_image_button">Pass Image</string>
+
+
+    <string name="ok">OK</string>
+    <string name="menuitem_deletecard">Delete Card</string>
+    <string name="failed_it">Failed it</string>
+    <string name="got_it">Got it!</string>
+    <string name="reveal_card">Reveal Card</string>
+    <string name="run_quiz">Run Quiz</string>
+    <string name="done_studying">Done Studying</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="score_text">Last Study Score: </string>
+
+    <string name="welcome_text">Welcome to FlashStudy</string>
+    <string name="welcome_note">FlashStudy helps you create flashcards and access them anywhere.</string>
+
+    <string name="second_slide_head">Express your hints</string>
+    <string name="second_slide_body">Define your own custom cards with hint images.</string>
+
+    <string name="third_slide_head">Quiz yourself</string>
+    <string name="third_slide_body">FlashStudy helps you randomly select cards to quiz yourself.</string>
+
+    <string name="done_slide_head">All set. Lets get started</string>
+    <string name="done_slide_body">Get your Geek on, cause its about to get Flashy.</string>
+
+</resources>

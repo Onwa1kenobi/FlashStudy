@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorPrimary">#251227</item>
+        <item name="colorPrimaryDark">#1E0920</item>
+        <item name="colorAccent">#665269</item>
+    </style>
+
+    <style name="AppTheme.rightPane">
+        <item name="android:windowBackground">@color/paneBackground</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">fill</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

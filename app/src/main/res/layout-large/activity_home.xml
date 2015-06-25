@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:clipToPadding="false"
+    android:baselineAligned="false">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.daftneeks.julius.flashstudy.KnapSackFragment"
+        android:id="@+id/sackFragment"
+        android:layout_weight="1"
+        tools:layout="@layout/knapsack_fragment_home" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.004"
+        android:background="@color/myPrimary"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.996"
+        android:id="@+id/rightPaneContainer"
+        style="@style/AppTheme.rightPane"
+        android:padding="8dp" />
+</LinearLayout>
