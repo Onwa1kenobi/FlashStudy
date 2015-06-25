@@ -24,8 +24,6 @@ public class SolutionFragment extends Fragment {
     ImageButton correctButton, wrongButton;
     TextView answerText;
 
-    int count;
-    int score;
     int correct, wrong;
 
     public SolutionFragment() {
@@ -83,9 +81,7 @@ public class SolutionFragment extends Fragment {
     View.OnClickListener correctButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            count += 1;
             correct +=1;
-            Toast.makeText(getActivity(), "Correct is: " + correct + "\nWrong is: " + wrong, Toast.LENGTH_LONG).show();
             listener.onChoiceMade(true, correct, wrong);
         }
     };
@@ -93,9 +89,7 @@ public class SolutionFragment extends Fragment {
     View.OnClickListener wrongButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            count += 1;
             wrong += 1;
-            Toast.makeText(getActivity(), "Correct is: " + correct + "\nWrong is: " + wrong, Toast.LENGTH_LONG).show();
             listener.onChoiceMade(true, correct, wrong);
         }
     };
